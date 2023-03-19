@@ -2,6 +2,8 @@
 
 **欢迎自行整理代码。**
 
+<img height="300" width=auto src="https://api.ixiaowai.cn/api/api.php" alt="欢迎自行整理代码"/>
+
 ### 项目介绍
 本项目是一个基于ChatGpt的语音对话机器人，使用了百度的语音识别和语音合成，微软的语言理解，语音合成和语音识别，VITS的语音合成。
 
