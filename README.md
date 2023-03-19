@@ -25,4 +25,4 @@ _~~使用 WebSpeech API 代替百度等一众的语音识别和语音合成，�
 
 ![欢迎自行整理代码](https://img.shields.io/badge/Welcome%20to%20modify%20the%20code-Yes-brightgreen.svg)
 ![Python](https://img.shields.io/badge/Python-3.9.16-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-blue.svg)
