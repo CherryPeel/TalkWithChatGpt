@@ -101,3 +101,8 @@ def recognize_from_wave_file(path_):
     except Exception as e:
         logger = sl(logger_name=sys._getframe(0).f_code.co_name).save_log()
         logger.error(__file__ + str(sys._getframe(0).f_lineno) + ' ' + str(e))
+
+
+if __name__ == '__main__':
+#     print(os.environ.get('SPEECH_KEY'))
+    pass

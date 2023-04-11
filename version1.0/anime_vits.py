@@ -17,7 +17,7 @@ from savelogging import SaveLogger as sl
 
 
 def get_wav(_text='没字我咋说话', _lang='中文', _speaker='八重神子（神子）', _speed=0.6, _pitch=0.668, _volume=1.2):
-    url = ''
+    url = 'wss://sayashi-vits-uma-genshin-honkai.hf.space/queue/join'
 
     # 构造伪客户端信息
     headers = {
@@ -25,7 +25,7 @@ def get_wav(_text='没字我咋说话', _lang='中文', _speaker='八重神子�
         'Accept-Encoding': 'gzip, deflate, br',
         'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
         'Upgrade': 'websocket',
-        'Origin': '',
+        'Origin': 'https://sayashi-vits-uma-genshin-honkai.hf.space',
         'Pragma': 'no-cache',
         'Cache-Control': 'no-cache',
         'Connection': 'Upgrade',
@@ -53,7 +53,7 @@ def get_wav(_text='没字我咋说话', _lang='中文', _speaker='八重神子�
         # print(res)
         try:
             if res['msg'] == 'process_completed':
-                wav = "" + res['output']['data'][1]['name']
+                wav = "https://sayashi-vits-uma-genshin-honkai.hf.space/file=" + res['output']['data'][1]['name']
 
                 if not os.path.exists('./static/wav'):
                     os.makedirs('./static/wav')
@@ -85,5 +85,5 @@ def play_wav():
         logger = sl(logger_name=sys._getframe(0).f_code.co_name).save_log()
         logger.error(__file__ + str(sys._getframe(0).f_lineno) + ' ' + str(e))
 
-# if __name__ == "__main__":
-#     get_wav(_speaker='理之律者')
+if __name__ == "__main__":
+    get_wav(_speaker='理之律者')

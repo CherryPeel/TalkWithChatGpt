@@ -51,15 +51,16 @@ def cg_answer(text_, conversationId_='', parentMessageId_=''):
         parentMessageId = ''
     return response, conversationId, parentMessageId
 
-# if __name__ == "__main__":
-#     conid = ''
-#     parid = ''
-#     while True:
-#         print('>>>', conid, parid)
-#         text = input("请输入：\n")
-#         if text == 'exit':
-#             break
-#         res = cg_answer(text, conid, parid)
-#         print(res[0])
-#         conid = res[1]
-#         parid = res[2]
+
+if __name__ == "__main__":
+    conid = ''
+    parid = ''
+    while True:
+        print('>>>', conid, parid)
+        text = input("请输入：\n")
+        if text == 'exit':
+            break
+        res = cg_answer(text, conid, parid)
+        print(res[0])
+        conid = res[1]
+        parid = res[2]
